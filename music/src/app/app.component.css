@@ -1,0 +1,25 @@
+#visualize{
+    padding: 350px 400px;
+    background: red;
+}
+#player-buttons{
+    background: yellow;
+    position: relative;
+}
+#music-buttons{
+    background: blue;
+    
+}
+#inner-container{
+    border: solid red;
+    display: inline-block;
+    padding: 0 30%;
+    align-content: center;
+}
+#outside-container {
+    display: inline-block;
+    text-align: center;
+    padding-left: 100px;
+    align-content: center;
+    margin: 0 auto;
+}
