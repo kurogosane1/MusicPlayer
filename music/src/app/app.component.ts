@@ -7,7 +7,11 @@ import {Howl} from 'howler';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  tracks: Array<any>;
+  // this will track of index
+  index: number;
+  // this is for later
+  menuOpen: boolean;
   sound: any;
 
   constructor() {
@@ -22,11 +26,16 @@ export class AppComponent {
   });
   }
 
+    // playing of music
     playMusic() {
       this.sound.play();
     }
 
+    // to pause music
     pauseMusic() {
       this.sound.pause();
     }
+
+    // next music
+    nextMusic() {}
 }

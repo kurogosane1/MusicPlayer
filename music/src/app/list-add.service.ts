@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
 import {Howl} from 'howler';
 
+// This is to create the object
+interface Playlist {
+  id: number;
+  playing: boolean;
+  sound: Howl;
+}
+
 @Injectable()
 export class ListAddService {
 
   constructor() { }
 
   // to play music
-  playsound() {
-    const sound: any = new Howl({
-      src: ['../assets/1-01 Galaxy Supernova.mp3']
-    });
-  }
+  play() {}
 
   // to pause music
-  stopMusic() {
-    
-  }
+  pauseMusic() {}
 
   // next music
   nextMusic() {}
